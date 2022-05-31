@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Search Engine</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="index-container">
+        <main>
+            <span id="title">Search a user in GitHub::</span>
+            <input type="search" id="search-user" value="Enter here" onfocus="onFocusValue()" onfocusout="onFocusOutValue()"/>
+            <div id="user-profile-box">
+                <section id="box-section-1">
+                    <img id="profile-image">
+                    <span id="login-name"></span>
+                </section>
+                <section id="box-section-2">
+                    <span id="user-name"></span>
+                    <span id="user-location"></span>
+                    <span id="user-company"></span>
+                </section>
+                <section id="box-section-3">
+                    <span id="user-website"></span>
+                    <span id="user-followers"></span>
+                    <span id="user-following"></span>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <span>Designed by Mike Chaukre</span>
+            <span>Copyright@2022</span>
+        </footer>
+    </div>    
+
+    <script src="githubAPI.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
